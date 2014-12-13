@@ -65,7 +65,7 @@
 	<key>publishToZipFile</key>
 	<false/>
 	<key>resourceAutoScaleFactor</key>
-	<integer>4</integer>
+	<integer>2</integer>
 	<key>resourcePaths</key>
 	<array>
 		<dict>
@@ -78,14 +78,14 @@
 		<key></key>
 		<dict>
 			<key>previewFolderHidden</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Sprites</key>
 		<dict/>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>ccbResources/ccbButtonHighlighted.png</key>
 		<dict>
