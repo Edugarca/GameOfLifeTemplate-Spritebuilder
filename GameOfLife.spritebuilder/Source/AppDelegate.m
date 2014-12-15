@@ -30,7 +30,7 @@
 
 @implementation AppController
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(CCApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Configure Cocos2d with the options set in SpriteBuilder
     NSString* configPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Published-iOS"]; // TODO: add support for Published-Android support
@@ -41,9 +41,9 @@
     // Note: this needs to happen before configureCCFileUtils is called, because we need apportable to correctly setup the screen scale factor.
 #ifdef APPORTABLE
     if([cocos2dSetup[CCSetupScreenMode] isEqual:CCScreenModeFixed])
-        [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenAspectFitEmulationMode];
+        [CCScreen mainScreen].currentMode = [CCScreenMode emulatedMode:CCScreenAspectFitEmulationMode];
     else
-        [UIScreen mainScreen].currentMode = [UIScreenMode emulatedMode:UIScreenScaledAspectFitEmulationMode];
+        [CCScreen mainScreen].currentMode = [CCScreenMode emulatedMode:CCScreenScaledAspectFitEmulationMode];
 #endif
     
     // Configure CCFileUtils to work with SpriteBuilder
